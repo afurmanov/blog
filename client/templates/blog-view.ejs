@@ -1,0 +1,11 @@
+<ul class="side-nav posts">
+  <% _.each(posts, function(post, index) {%>
+    <li class='post' data-id='<%=post.id%>'>
+      <h6><small><%= post.date %></small></h6>
+      <a href='<%=router.POST.urlFor(post)%>'><%= post.title %></a>
+    </li>
+    <% if (index < posts.length - 1) { %>
+      <li class="divider"></li>
+    <% } %>
+  <%});%>
+</ul>

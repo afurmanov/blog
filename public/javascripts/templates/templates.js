@@ -1,0 +1,5 @@
+window['JST'] = window['JST'] || {};
+window['JST']['raw'] = window['JST']['raw'] || {};
+
+window['JST']['raw']['templates/test'] = "<!-- based on the example output, this file would be at app/views/templates/activities/index.ejs -->\n<% _.each( activities , function( activity , id ){ %>\n  <%\n    var id        = activity.ID\n      , note      = activity.Note;\n  %>\n  <tr>\n    <td><%= id %></td>\n    <td><%= note %></td>\n    <td class=\"code-cell\">\n      <pre><%= directive %></pre>\n    </td>\n    <td class=\"code-cell\">\n      <pre><%= response %></pre>\n    </td>\n    <td><%= on_tap %></td>\n    <td>\n      <button\n        class=\"btn btn-large btn-warning edit-activity-btn\"\n        data-activity-id=\"<%= id %>\"\n        data-activity-note=\"<%= note %>\"\n      >*</button>\n    </td>\n  </tr>\n<% } ); %>\n";
+window['JST']['templates/test'] = _.memoize( function( locals ){ return window.ejs.compile( window['JST']['raw']['templates/test'] )( locals ); } , function( locals ){ return _.chain( locals ).values().reduce( function( m , v ){ return m + v.toString() } , '' ).value(); } );

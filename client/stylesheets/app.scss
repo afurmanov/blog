@@ -1,0 +1,129 @@
+@import "foundation/functions";
+@import "foundation/settings";
+@import "foundation";
+
+//general layout
+$aside-width: rem-calc(240);
+
+.row {
+ margin-left: 0;
+ margin-right: 0;
+}
+
+#main-wrapper {
+    width: $row-width;
+    display : table;
+}
+
+#aside-wrapper {
+    display : table-cell;
+    width: grid-calc(2, $total-columns);
+    min-width: grid-calc(2, $total-columns);
+}
+
+#content-wrapper {
+    display: table-cell;
+}
+
+
+// HEADER
+
+header {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   img {
+       height:4rem;
+       width:4rem;
+       @include radius(4px);
+       float: left;
+   }
+   #logo-wrapper {
+       float:left;
+       h3 {
+           padding-left: 1em;
+           line-height: 1.5rem;
+       }
+   }
+   #slash {
+       float:left;
+       color: $small-font-color;
+       h1 {
+           line-height: 3rem;
+           font-size: 5rem;
+           color: $small-font-color;
+      }
+   }
+   #title {
+       float:left;
+       h1 {
+           line-height: 1.9rem;
+           color: $small-font-color;
+       }
+       h5 {
+           line-height: 1.2rem;
+           color: $small-font-color;
+       }
+   }
+   .social {
+       a {
+           target-new:tab;
+       }
+       i {
+           font-size:2em;
+           margin-right: 1rem;
+       }
+       float: right;
+   }
+}
+
+// side-navigation
+
+#aside-wrapper {
+    background: $panel-bg;
+    .panel {
+        border: none;
+        }
+    border-style: solid;
+    border-width: 1px;
+    border-color: darken($panel-bg, $panel-function-factor);
+}
+
+// CONTENT
+article {
+    h1 { font-size: rem-calc(37); }
+    h2 { font-size: rem-calc(27); }
+    h3 { font-size: rem-calc(23); }
+    h4 { font-size: rem-calc(18); }
+    h5 { font-size: 1rem; }
+    h6 { font-size: 1rem; }
+    pre {
+        margin-bottom: rem-calc(20);
+        font-size: rem-calc(16);
+        line-height: normal;
+    }
+    pre code {
+        font-size: rem-calc(11);
+    }
+    .title {
+        text-align: center;
+    }
+    padding-left: 1rem;
+}
+
+// FOOTER
+
+footer {
+    #disqus_thread {
+        margin: 0 2rem;
+    }
+    .social {
+        widht: 100%;
+        i {
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background: $panel-bg;
+    }
+}
