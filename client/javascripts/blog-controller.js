@@ -28,8 +28,6 @@ var blogController = {
       var disqus_identifier = postId;
       var disqus_shortname = 'afurmanov';
       if (typeof(DISQUS) === "undefined") {
-        //console.log("loading DISCUSS, identifier '" + disqus_identifier + "'...");
-        console.log("window.location.href: '" + window.location.href + "'");
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
