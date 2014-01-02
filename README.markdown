@@ -20,7 +20,7 @@ Blog posts are _.markdown_ files in _./articles_ folder with couple additions to
     Rest of .markdown here
     </pre>
 
-
+See an online example at http://afurmanov.com
 
 I wrote it to get a sense what is:
 
