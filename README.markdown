@@ -14,6 +14,7 @@ Blog posts are _.markdown_ files in _./articles_ folder with couple additions to
  
     <pre>
     Author: Mark Twain
+    Slug: great_article
     Title: Great Article
     Date: 09/28/2013
 
