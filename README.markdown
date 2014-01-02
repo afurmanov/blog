@@ -7,4 +7,4 @@ I wrote it to get a sense what is:
 _Backbone_, _Angular_, etc.). It still uses _MVC_ pattern to organize
 client side logic.
 
-- Build a Node.js application where dataflow built around Promises
+- Create a Node.js application where dataflow is built around Promises
