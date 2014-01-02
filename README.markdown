@@ -1,7 +1,7 @@
 This is source code for my blog which is a Single Page App (SPA) and
 Node.js based server.
 
-Blog posts are .markdown file with couple extensions:
+Blog posts are _.markdown_ files in _./articles_ folder with couple additions to _.MARKDOWN_ syntax:
 
 1. Footnotes syntax supported:
 
