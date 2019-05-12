@@ -1,5 +1,5 @@
-@import "foundation/functions";
-@import "foundation/settings";
+@import "settings/settings";
+@import "util/util";
 @import "foundation";
 
 //general layout
@@ -11,14 +11,14 @@ $aside-width: rem-calc(240);
 }
 
 #main-wrapper {
-    width: $row-width;
+    width: $grid-row-width;
     display : table;
 }
 
 #aside-wrapper {
     display : table-cell;
-    width: grid-calc(2, $total-columns);
-    min-width: grid-calc(2, $total-columns);
+    width: grid-calc(2, $grid-columns);
+    min-width: grid-calc(2, $grid-columns);
 }
 
 #content-wrapper {
@@ -34,7 +34,7 @@ header {
    img {
        height:4rem;
        width:4rem;
-       @include radius(4px);
+       @include border-radius(4px);
        float: left;
    }
    #logo-wrapper {
@@ -46,22 +46,22 @@ header {
    }
    #slash {
        float:left;
-       color: $small-font-color;
+       color: $medium-gray;
        h1 {
            line-height: 3rem;
            font-size: 5rem;
-           color: $small-font-color;
+           color: $medium-gray;
       }
    }
    #title {
        float:left;
        h1 {
            line-height: 1.9rem;
-           color: $small-font-color;
+           color: $medium-gray;
        }
        h5 {
            line-height: 1.2rem;
-           color: $small-font-color;
+           color: $medium-gray;
        }
    }
    .social {
@@ -79,13 +79,13 @@ header {
 // side-navigation
 
 #aside-wrapper {
-    background: $panel-bg;
+    background: $secondary-color;
     .panel {
         border: none;
         }
     border-style: solid;
     border-width: 1px;
-    border-color: darken($panel-bg, $panel-function-factor);
+    border-color: smart-scale($secondary-color, -11%);
 }
 
 // CONTENT
@@ -124,6 +124,6 @@ footer {
         }
         padding-top: 2rem;
         padding-bottom: 2rem;
-        background: $panel-bg;
+        background: $secondary-color;
     }
 }

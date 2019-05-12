@@ -12,7 +12,6 @@ var routes = require('./routes');
 var http = require('http');
 // var methodOverride = require('method-override');
 var path = require('path');
-var sass = require('node-sass-middleware');
 
 var app = express();
 
@@ -32,10 +31,6 @@ app.get('/', routes.index);
 app.get('/blog/articles', routes.articles(path.join(__dirname, 'articles')));
 app.get('/blog/articles/:article', routes.article(path.join(__dirname, 'articles')));
 app.get('/blog/*', routes.index);
-app.use( sass({ src: __dirname + '/client',
-    dest: __dirname + '/public',
-    debug: true
-    }));
 
 app.use('/javascripts', browserify('./client/javascripts'));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -44,7 +39,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(errorHandler);
 }
-
 
 require('./routes/redirects').init(app);
 

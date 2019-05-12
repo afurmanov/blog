@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     , file   = grunt.file
     , log    = grunt.log;
 
-  grunt.initConfig( {
+  grunt.initConfig({
     'ejs': {
       'public/javascripts/templates/all.js': 'client/templates/**/*.ejs'
     },
@@ -11,14 +11,17 @@ module.exports = function(grunt) {
       dist: {
         options: {
           loadPath: ['node_modules/foundation-sites/scss']
+        },
+        files: {
+          'public/stylesheets/app.css': 'client/stylesheets/app.scss',
         }
-      }
-    }
-    , 'watch': {
+      }, // dist
+    },
+    'watch': {
       'files': 'templates/**/*.ejs'
       , 'tasks': 'ejs'
     }
-  } );
+  });
 
   grunt.registerMultiTask( 'ejs' , 'Compile ejs templates to JST file' , function(){
     // If namespace is specified use that, otherwise fallback
