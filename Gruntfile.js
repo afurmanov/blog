@@ -6,10 +6,17 @@ module.exports = function(grunt) {
   grunt.initConfig( {
     'ejs': {
       'public/javascripts/templates/all.js': 'client/templates/**/*.ejs'
+    },
+    'sass': {
+      dist: {
+        options: {
+          loadPath: ['node_modules/foundation-sites/scss']
+        }
+      }
     }
-  , 'watch': {
+    , 'watch': {
       'files': 'templates/**/*.ejs'
-    , 'tasks': 'ejs'
+      , 'tasks': 'ejs'
     }
   } );
 
@@ -60,4 +67,6 @@ module.exports = function(grunt) {
 
     return contents;
   };
+
+  grunt.loadNpmTasks('grunt-contrib-sass');
 };
