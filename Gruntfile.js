@@ -18,8 +18,8 @@ module.exports = function(grunt) {
       }, // dist
     },
     'watch': {
-      'files': 'templates/**/*.ejs'
-      , 'tasks': 'ejs'
+      'files': 'client/**/*.scss'
+      , 'tasks': 'sass'
     }
   });
 
@@ -72,4 +72,5 @@ module.exports = function(grunt) {
   };
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };

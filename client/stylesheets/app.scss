@@ -1,5 +1,4 @@
-@import "settings/settings";
-@import "util/util";
+@import "settings";
 @import "foundation";
 
 //general layout
@@ -11,14 +10,14 @@ $aside-width: rem-calc(240);
 }
 
 #main-wrapper {
-    width: $grid-row-width;
+    width: $row-width;
     display : table;
 }
 
 #aside-wrapper {
     display : table-cell;
-    width: grid-calc(2, $grid-columns);
-    min-width: grid-calc(2, $grid-columns);
+    width: grid-calc(2, $total-columns);
+    min-width: grid-calc(2, $total-columns);
 }
 
 #content-wrapper {
@@ -34,7 +33,7 @@ header {
    img {
        height:4rem;
        width:4rem;
-       @include border-radius(4px);
+       @include radius(4px);
        float: left;
    }
    #logo-wrapper {
@@ -46,7 +45,6 @@ header {
    }
    #slash {
        float:left;
-       color: $medium-gray;
        h1 {
            line-height: 3rem;
            font-size: 5rem;
@@ -85,7 +83,7 @@ header {
         }
     border-style: solid;
     border-width: 1px;
-    border-color: smart-scale($secondary-color, -11%);
+    border-color: $panel-border-color;
 }
 
 // CONTENT
