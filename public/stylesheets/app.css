@@ -1,101 +1,52 @@
-/**
- * Foundation for Sites by ZURB
- * Version 6.5.3
- * foundation.zurb.com
- * Licensed under MIT Open Source
- */
-.row {
-  margin-left: 0;
-  margin-right: 0; }
+/*
+Error: File to import not found or unreadable: settings/settings.
+       Load path: /Users/alex/i/blog/node_modules/foundation-sites/scss
+        on line 1 of client/stylesheets/app.scss
 
-#main-wrapper {
-  width: 75rem;
-  display: table; }
+1: @import "settings/settings";
+2: @import "util/util";
+3: @import "foundation";
+4: 
+5: //general layout
+6: $aside-width: rem-calc(240);
 
-#aside-wrapper {
-  display: table-cell;
-  width: grid-calc(2, 12);
-  min-width: grid-calc(2, 12); }
-
-#content-wrapper {
-  display: table-cell; }
-
-header {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-  header img {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 4px;
-    float: left; }
-  header #logo-wrapper {
-    float: left; }
-    header #logo-wrapper h3 {
-      padding-left: 1em;
-      line-height: 1.5rem; }
-  header #slash {
-    float: left;
-    color: #cacaca; }
-    header #slash h1 {
-      line-height: 3rem;
-      font-size: 5rem;
-      color: #cacaca; }
-  header #title {
-    float: left; }
-    header #title h1 {
-      line-height: 1.9rem;
-      color: #cacaca; }
-    header #title h5 {
-      line-height: 1.2rem;
-      color: #cacaca; }
-  header .social {
-    float: right; }
-    header .social a {
-      target-new: tab; }
-    header .social i {
-      font-size: 2em;
-      margin-right: 1rem; }
-
-#aside-wrapper {
-  background: #767676;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #858585; }
-  #aside-wrapper .panel {
-    border: none; }
-
-article {
-  padding-left: 1rem; }
-  article h1 {
-    font-size: 2.3125rem; }
-  article h2 {
-    font-size: 1.6875rem; }
-  article h3 {
-    font-size: 1.4375rem; }
-  article h4 {
-    font-size: 1.125rem; }
-  article h5 {
-    font-size: 1rem; }
-  article h6 {
-    font-size: 1rem; }
-  article pre {
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    line-height: normal; }
-  article pre code {
-    font-size: 0.6875rem; }
-  article .title {
-    text-align: center; }
-
-footer #disqus_thread {
-  margin: 0 2rem; }
-footer .social {
-  widht: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background: #767676; }
-  footer .social i {
-    font-size: 2rem;
-    margin-left: 2rem; }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+client/stylesheets/app.scss:1
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/local/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: settings/settings.\A        Load path: /Users/alex/i/blog/node_modules/foundation-sites/scss\A         on line 1 of client/stylesheets/app.scss\A \A 1: @import \"settings/settings\";\A 2: @import \"util/util\";\A 3: @import \"foundation\";\A 4: \A 5: //general layout\A 6: $aside-width: rem-calc(240);"; }

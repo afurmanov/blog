@@ -15,6 +15,7 @@
     "debug": "^4.1.1",
     "ejs": "^2.6.1",
     "errorhandler": "^1.5.1",
+    "foundation-sites": "^5.5.3",
     "express": "^4.16.4",
     "glob": "^7.1.4",
     "highlight.js": "^9.15.6",
