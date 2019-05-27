@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     'ejs': {
-      'public/javascripts/templates/all.js': 'client/templates/**/*.ejs'
+      'client/templates/all.js': 'client/templates/**/*.ejs'
     },
     'sass': {
       dist: {

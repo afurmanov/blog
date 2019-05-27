@@ -1,3 +1,6 @@
+// let browserify to pick this dependency
+require('./../templates/all.js')
+
 var PostView = function(post) {
    this.post = post;
 };
