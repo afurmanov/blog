@@ -10,7 +10,6 @@ var bodyParser = require('body-parser')
 var errorHandler = require('errorhandler')
 var routes = require('./routes');
 var http = require('http');
-// var methodOverride = require('method-override');
 var path = require('path');
 
 var app = express();
@@ -24,8 +23,6 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')))
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-// app.use(express.methodOverride());
-//app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/blog/articles', routes.articles(path.join(__dirname, 'articles')));
