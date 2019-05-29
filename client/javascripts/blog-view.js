@@ -1,5 +1,7 @@
 var blogEndPoints = require('./blog-end-points');
 var events = require('./blog-events');
+// let browserify to pick this dependency
+require('./../templates/all.js')
 
 BlogView = function(posts) {
   this.posts = posts;

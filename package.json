@@ -6,23 +6,29 @@
     "start": "node app.js"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "^12.2.0"
   },
   "dependencies": {
-    "express": "3.4.4",
-    "debug": "0.7.4",
-    "glob": "3.2.7",
-    "browserify": "2.33.1",
-    "browserify-middleware": "1.21.0",
-    "node-sass": "0.7.0",
-    "ejs": "*",
-    "q": "~0.9.7",
-    "underscore": "~1.5.2",
-    "q-io": "~1.10.6",
-    "marked": "~0.2.10",
-    "highlight.js": "~7.5.0"
+    "body-parser": "^1.19.0",
+    "browserify": "^16.2.3",
+    "browserify-middleware": "^8.1.1",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "errorhandler": "^1.5.1",
+    "express": "^4.16.4",
+    "foundation-sites": "^5.5.3",
+    "glob": "^7.1.4",
+    "highlight.js": "^9.15.6",
+    "marked": "^0.2.10",
+    "morgan": "^1.9.1",
+    "q": "^1.5.1",
+    "q-io": "^1.13.6",
+    "serve-favicon": "^2.5.0",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "^1.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }

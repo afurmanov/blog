@@ -1,3 +1,6 @@
+// let browserify to pick this dependency
+require('./../templates/all.js')
+
 var PageView = function(application) {
   this.application = application;
 };

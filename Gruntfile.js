@@ -3,15 +3,25 @@ module.exports = function(grunt) {
     , file   = grunt.file
     , log    = grunt.log;
 
-  grunt.initConfig( {
+  grunt.initConfig({
     'ejs': {
-      'public/javascripts/templates/all.js': 'client/templates/**/*.ejs'
+      'client/templates/all.js': 'client/templates/**/*.ejs'
+    },
+    'sass': {
+      dist: {
+        options: {
+          loadPath: ['node_modules/foundation-sites/scss']
+        },
+        files: {
+          'public/stylesheets/app.css': 'client/stylesheets/app.scss',
+        }
+      }, // dist
+    },
+    'watch': {
+      'files': 'client/**/*.scss'
+      , 'tasks': 'sass'
     }
-  , 'watch': {
-      'files': 'templates/**/*.ejs'
-    , 'tasks': 'ejs'
-    }
-  } );
+  });
 
   grunt.registerMultiTask( 'ejs' , 'Compile ejs templates to JST file' , function(){
     // If namespace is specified use that, otherwise fallback
@@ -60,4 +70,7 @@ module.exports = function(grunt) {
 
     return contents;
   };
+
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 };
