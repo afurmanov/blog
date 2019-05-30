@@ -12,6 +12,7 @@
     "body-parser": "^1.19.0",
     "browserify": "^16.2.3",
     "browserify-middleware": "^8.1.1",
+    "compression": "^1.7.4",
     "debug": "^4.1.1",
     "ejs": "^2.6.1",
     "errorhandler": "^1.5.1",
