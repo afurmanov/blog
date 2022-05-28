@@ -1,3 +1,5 @@
+Not maintained anymore. Could be used as example of how to build SPA with Node.js.
+
 This is source code for my blog which is a Single Page App (SPA) and
 Node.js based server.
 
